@@ -42,7 +42,7 @@ export default function Cart() {
 
   const checkoutHref = isGuest
     ? "/login?callbackUrl=%2Fcart"
-    : `/cart/${query.data?.cartId}`;
+    : `/checkout/${query.data?.cartId}`;
 
   const rows = [];
   for (let i = 0; i < products.length; i++) {

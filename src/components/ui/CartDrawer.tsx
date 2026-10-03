@@ -48,7 +48,7 @@ export default function CartDrawer({ open, onClose }: CartDrawerProps) {
 
   const checkoutHref = isGuest
     ? "/login?callbackUrl=%2Fcart"
-    : `/cart/${query.data?.cartId}`;
+    : `/checkout/${query.data?.cartId}`;
 
   useEffect(
     function () {
