@@ -79,11 +79,6 @@ const accountLinks = [
   { label: "Create Account", href: "/signup" },
 ];
 
-const supportLinks = [
-  { label: "Contact Us", href: "/contact" },
-  { label: "Track Order", href: "/allorders" },
-];
-
 const highlights = [
   {
     icon: Truck,
@@ -195,7 +190,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-10 lg:contents">
+          <div className="grid grid-cols-2 gap-10 lg:grid-cols-3">
             <div>
               <h3
                 className="mb-4 text-[20px] font-bold text-white"
@@ -226,27 +221,6 @@ export default function Footer() {
               </h3>
               <ul className="space-y-2.5">
                 {accountLinks.map((link) => (
-                  <li key={link.href}>
-                    <Link
-                      href={link.href}
-                      className="text-[18px] text-[#B8BDC6] transition-colors hover:text-[#0EA5A0]"
-                    >
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h3
-                className="mb-4 text-[20px] font-bold text-white"
-                style={{ fontFamily: "var(--font-poppins)" }}
-              >
-                Support
-              </h3>
-              <ul className="space-y-2.5">
-                {supportLinks.map((link) => (
                   <li key={link.href}>
                     <Link
                       href={link.href}
