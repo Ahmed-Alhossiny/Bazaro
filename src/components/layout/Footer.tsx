@@ -81,16 +81,7 @@ const accountLinks = [
 
 const supportLinks = [
   { label: "Contact Us", href: "/contact" },
-  { label: "Help Center", href: "/help" },
-  { label: "Shipping Info", href: "/shipping-info" },
-  { label: "Returns & Refunds", href: "/returns" },
   { label: "Track Order", href: "/allorders" },
-];
-
-const legalLinks = [
-  { label: "Privacy Policy", href: "/privacy-policy" },
-  { label: "Terms of Service", href: "/terms" },
-  { label: "Cookie Policy", href: "/cookie-policy" },
 ];
 
 const highlights = [
@@ -256,27 +247,6 @@ export default function Footer() {
               </h3>
               <ul className="space-y-2.5">
                 {supportLinks.map((link) => (
-                  <li key={link.href}>
-                    <Link
-                      href={link.href}
-                      className="text-[18px] text-[#B8BDC6] transition-colors hover:text-[#0EA5A0]"
-                    >
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h3
-                className="mb-4 text-[20px] font-bold text-white"
-                style={{ fontFamily: "var(--font-poppins)" }}
-              >
-                Legal
-              </h3>
-              <ul className="space-y-2.5">
-                {legalLinks.map((link) => (
                   <li key={link.href}>
                     <Link
                       href={link.href}
