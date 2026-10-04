@@ -57,7 +57,7 @@ The product data and order processing come from the public [Route Ecommerce API]
 ### Installation
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/bazaro.git
+git clone https://github.com/Ahmed-Alhossiny/bazaro.git
 cd bazaro
 npm install
 ```
