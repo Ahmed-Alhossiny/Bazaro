@@ -127,7 +127,7 @@ export default function Footer() {
       </div>
 
       <div className="bg-[#1F2937] px-6 py-12">
-        <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-[1.4fr_1fr_1fr_1fr_1fr] lg:gap-10">
+        <div className="mx-auto max-w-7xl lg:grid lg:grid-cols-[1.4fr_1fr_1fr] lg:gap-10">
           <div className="mb-10 lg:mb-0">
             <div>
               <Image src={logo} alt="Bazaro" className="w-fit h-25" priority />
@@ -190,7 +190,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-10 lg:grid-cols-3">
+          <div className="grid grid-cols-2 gap-10 lg:contents">
             <div>
               <h3
                 className="mb-4 text-[20px] font-bold text-white"
